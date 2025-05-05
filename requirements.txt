@@ -1,5 +1,6 @@
-Flask
+flask
 pandas
-undetected-chromedriver
 selenium
 openpyxl
+undetected-chromedriver
+tqdm

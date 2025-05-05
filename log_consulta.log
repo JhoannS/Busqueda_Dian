@@ -1,0 +1,276 @@
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 875-855-456
+INFO:werkzeug:127.0.0.1 - - [05/May/2025 08:56:52] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/May/2025 08:56:52] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:undetected_chromedriver.patcher:patching driver executable C:\Users\Diseño\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+INFO:werkzeug:127.0.0.1 - - [05/May/2025 08:57:00] "POST /procesar HTTP/1.1" 200 -
+INFO:undetected_chromedriver.patcher:patching driver executable C:\Users\Diseño\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+INFO:werkzeug:127.0.0.1 - - [05/May/2025 08:57:06] "POST /procesar HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/May/2025 08:57:08] "GET / HTTP/1.1" 200 -
+INFO:undetected_chromedriver.patcher:patching driver executable C:\Users\Diseño\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+INFO:werkzeug:127.0.0.1 - - [05/May/2025 08:57:17] "POST /procesar HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/May/2025 08:58:27] "GET / HTTP/1.1" 200 -
+INFO:undetected_chromedriver.patcher:patching driver executable C:\Users\Diseño\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+INFO:werkzeug:127.0.0.1 - - [05/May/2025 08:58:35] "POST /procesar HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/May/2025 08:59:26] "GET / HTTP/1.1" 200 -
+INFO:undetected_chromedriver.patcher:patching driver executable C:\Users\Diseño\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+ERROR:root:Error con NIT 860026620 (Intento 1): Message: 
+Stacktrace:
+	GetHandleVerifier [0x0053FBD3+61635]
+	GetHandleVerifier [0x0053FC14+61700]
+	(No symbol) [0x003605D3]
+	(No symbol) [0x003A899E]
+	(No symbol) [0x003A8D3B]
+	(No symbol) [0x003F0E12]
+	(No symbol) [0x003CD2E4]
+	(No symbol) [0x003EE61B]
+	(No symbol) [0x003CD096]
+	(No symbol) [0x0039C840]
+	(No symbol) [0x0039D6A4]
+	GetHandleVerifier [0x00787043+2450739]
+	GetHandleVerifier [0x007827C6+2432182]
+	GetHandleVerifier [0x0079D50E+2542078]
+	GetHandleVerifier [0x00556895+155013]
+	GetHandleVerifier [0x0055CF7D+181357]
+	GetHandleVerifier [0x00547428+92440]
+	GetHandleVerifier [0x005475D0+92864]
+	GetHandleVerifier [0x00531FC0+5296]
+	BaseThreadInitThunk [0x758DFCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x76ED82AE+286]
+	RtlGetAppContainerNamedObjectPath [0x76ED827E+238]
+
+ERROR:root:Error con NIT 860026620 (Intento 2): Message: 
+Stacktrace:
+	GetHandleVerifier [0x0053FBD3+61635]
+	GetHandleVerifier [0x0053FC14+61700]
+	(No symbol) [0x003605D3]
+	(No symbol) [0x003A899E]
+	(No symbol) [0x003A8D3B]
+	(No symbol) [0x003F0E12]
+	(No symbol) [0x003CD2E4]
+	(No symbol) [0x003EE61B]
+	(No symbol) [0x003CD096]
+	(No symbol) [0x0039C840]
+	(No symbol) [0x0039D6A4]
+	GetHandleVerifier [0x00787043+2450739]
+	GetHandleVerifier [0x007827C6+2432182]
+	GetHandleVerifier [0x0079D50E+2542078]
+	GetHandleVerifier [0x00556895+155013]
+	GetHandleVerifier [0x0055CF7D+181357]
+	GetHandleVerifier [0x00547428+92440]
+	GetHandleVerifier [0x005475D0+92864]
+	GetHandleVerifier [0x00531FC0+5296]
+	BaseThreadInitThunk [0x758DFCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x76ED82AE+286]
+	RtlGetAppContainerNamedObjectPath [0x76ED827E+238]
+
+ERROR:root:Error con NIT 860026620 (Intento 3): Message: 
+Stacktrace:
+	GetHandleVerifier [0x0053FBD3+61635]
+	GetHandleVerifier [0x0053FC14+61700]
+	(No symbol) [0x003605D3]
+	(No symbol) [0x003A899E]
+	(No symbol) [0x003A8D3B]
+	(No symbol) [0x003F0E12]
+	(No symbol) [0x003CD2E4]
+	(No symbol) [0x003EE61B]
+	(No symbol) [0x003CD096]
+	(No symbol) [0x0039C840]
+	(No symbol) [0x0039D6A4]
+	GetHandleVerifier [0x00787043+2450739]
+	GetHandleVerifier [0x007827C6+2432182]
+	GetHandleVerifier [0x0079D50E+2542078]
+	GetHandleVerifier [0x00556895+155013]
+	GetHandleVerifier [0x0055CF7D+181357]
+	GetHandleVerifier [0x00547428+92440]
+	GetHandleVerifier [0x005475D0+92864]
+	GetHandleVerifier [0x00531FC0+5296]
+	BaseThreadInitThunk [0x758DFCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x76ED82AE+286]
+	RtlGetAppContainerNamedObjectPath [0x76ED827E+238]
+
+ERROR:root:Error con NIT 830027960 (Intento 1): Message: 
+Stacktrace:
+	GetHandleVerifier [0x0053FBD3+61635]
+	GetHandleVerifier [0x0053FC14+61700]
+	(No symbol) [0x003605D3]
+	(No symbol) [0x003A899E]
+	(No symbol) [0x003A8D3B]
+	(No symbol) [0x003F0E12]
+	(No symbol) [0x003CD2E4]
+	(No symbol) [0x003EE61B]
+	(No symbol) [0x003CD096]
+	(No symbol) [0x0039C840]
+	(No symbol) [0x0039D6A4]
+	GetHandleVerifier [0x00787043+2450739]
+	GetHandleVerifier [0x007827C6+2432182]
+	GetHandleVerifier [0x0079D50E+2542078]
+	GetHandleVerifier [0x00556895+155013]
+	GetHandleVerifier [0x0055CF7D+181357]
+	GetHandleVerifier [0x00547428+92440]
+	GetHandleVerifier [0x005475D0+92864]
+	GetHandleVerifier [0x00531FC0+5296]
+	BaseThreadInitThunk [0x758DFCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x76ED82AE+286]
+	RtlGetAppContainerNamedObjectPath [0x76ED827E+238]
+
+ERROR:root:Error con NIT 830027960 (Intento 2): Message: 
+Stacktrace:
+	GetHandleVerifier [0x0053FBD3+61635]
+	GetHandleVerifier [0x0053FC14+61700]
+	(No symbol) [0x003605D3]
+	(No symbol) [0x003A899E]
+	(No symbol) [0x003A8D3B]
+	(No symbol) [0x003F0E12]
+	(No symbol) [0x003CD2E4]
+	(No symbol) [0x003EE61B]
+	(No symbol) [0x003CD096]
+	(No symbol) [0x0039C840]
+	(No symbol) [0x0039D6A4]
+	GetHandleVerifier [0x00787043+2450739]
+	GetHandleVerifier [0x007827C6+2432182]
+	GetHandleVerifier [0x0079D50E+2542078]
+	GetHandleVerifier [0x00556895+155013]
+	GetHandleVerifier [0x0055CF7D+181357]
+	GetHandleVerifier [0x00547428+92440]
+	GetHandleVerifier [0x005475D0+92864]
+	GetHandleVerifier [0x00531FC0+5296]
+	BaseThreadInitThunk [0x758DFCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x76ED82AE+286]
+	RtlGetAppContainerNamedObjectPath [0x76ED827E+238]
+
+ERROR:root:Error con NIT 830027960 (Intento 3): Message: 
+Stacktrace:
+	GetHandleVerifier [0x0053FBD3+61635]
+	GetHandleVerifier [0x0053FC14+61700]
+	(No symbol) [0x003605D3]
+	(No symbol) [0x003A899E]
+	(No symbol) [0x003A8D3B]
+	(No symbol) [0x003F0E12]
+	(No symbol) [0x003CD2E4]
+	(No symbol) [0x003EE61B]
+	(No symbol) [0x003CD096]
+	(No symbol) [0x0039C840]
+	(No symbol) [0x0039D6A4]
+	GetHandleVerifier [0x00787043+2450739]
+	GetHandleVerifier [0x007827C6+2432182]
+	GetHandleVerifier [0x0079D50E+2542078]
+	GetHandleVerifier [0x00556895+155013]
+	GetHandleVerifier [0x0055CF7D+181357]
+	GetHandleVerifier [0x00547428+92440]
+	GetHandleVerifier [0x005475D0+92864]
+	GetHandleVerifier [0x00531FC0+5296]
+	BaseThreadInitThunk [0x758DFCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x76ED82AE+286]
+	RtlGetAppContainerNamedObjectPath [0x76ED827E+238]
+
+INFO:root:Consulta exitosa NIT: 860002964 — BANCO DE BOGOTA, Estado: REGISTRO ACTIVO
+INFO:werkzeug:127.0.0.1 - - [05/May/2025 09:02:45] "POST /procesar HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/May/2025 09:03:01] "GET / HTTP/1.1" 200 -
+INFO:undetected_chromedriver.patcher:patching driver executable C:\Users\Diseño\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+INFO:werkzeug:127.0.0.1 - - [05/May/2025 09:03:08] "POST /procesar HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/May/2025 09:03:50] "GET / HTTP/1.1" 200 -
+INFO:undetected_chromedriver.patcher:patching driver executable C:\Users\Diseño\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+ERROR:root:Error con NIT 860026620 (Intento 1): Message: 
+Stacktrace:
+	GetHandleVerifier [0x0100FBD3+61635]
+	GetHandleVerifier [0x0100FC14+61700]
+	(No symbol) [0x00E305D3]
+	(No symbol) [0x00E7899E]
+	(No symbol) [0x00E78D3B]
+	(No symbol) [0x00EC0E12]
+	(No symbol) [0x00E9D2E4]
+	(No symbol) [0x00EBE61B]
+	(No symbol) [0x00E9D096]
+	(No symbol) [0x00E6C840]
+	(No symbol) [0x00E6D6A4]
+	GetHandleVerifier [0x01257043+2450739]
+	GetHandleVerifier [0x012527C6+2432182]
+	GetHandleVerifier [0x0126D50E+2542078]
+	GetHandleVerifier [0x01026895+155013]
+	GetHandleVerifier [0x0102CF7D+181357]
+	GetHandleVerifier [0x01017428+92440]
+	GetHandleVerifier [0x010175D0+92864]
+	GetHandleVerifier [0x01001FC0+5296]
+	BaseThreadInitThunk [0x758DFCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x76ED82AE+286]
+	RtlGetAppContainerNamedObjectPath [0x76ED827E+238]
+
+ERROR:root:Error con NIT 860026620 (Intento 2): Message: 
+Stacktrace:
+	GetHandleVerifier [0x0100FBD3+61635]
+	GetHandleVerifier [0x0100FC14+61700]
+	(No symbol) [0x00E305D3]
+	(No symbol) [0x00E7899E]
+	(No symbol) [0x00E78D3B]
+	(No symbol) [0x00EC0E12]
+	(No symbol) [0x00E9D2E4]
+	(No symbol) [0x00EBE61B]
+	(No symbol) [0x00E9D096]
+	(No symbol) [0x00E6C840]
+	(No symbol) [0x00E6D6A4]
+	GetHandleVerifier [0x01257043+2450739]
+	GetHandleVerifier [0x012527C6+2432182]
+	GetHandleVerifier [0x0126D50E+2542078]
+	GetHandleVerifier [0x01026895+155013]
+	GetHandleVerifier [0x0102CF7D+181357]
+	GetHandleVerifier [0x01017428+92440]
+	GetHandleVerifier [0x010175D0+92864]
+	GetHandleVerifier [0x01001FC0+5296]
+	BaseThreadInitThunk [0x758DFCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x76ED82AE+286]
+	RtlGetAppContainerNamedObjectPath [0x76ED827E+238]
+
+ERROR:root:Error con NIT 860026620 (Intento 3): Message: 
+Stacktrace:
+	GetHandleVerifier [0x0100FBD3+61635]
+	GetHandleVerifier [0x0100FC14+61700]
+	(No symbol) [0x00E305D3]
+	(No symbol) [0x00E7899E]
+	(No symbol) [0x00E78D3B]
+	(No symbol) [0x00EC0E12]
+	(No symbol) [0x00E9D2E4]
+	(No symbol) [0x00EBE61B]
+	(No symbol) [0x00E9D096]
+	(No symbol) [0x00E6C840]
+	(No symbol) [0x00E6D6A4]
+	GetHandleVerifier [0x01257043+2450739]
+	GetHandleVerifier [0x012527C6+2432182]
+	GetHandleVerifier [0x0126D50E+2542078]
+	GetHandleVerifier [0x01026895+155013]
+	GetHandleVerifier [0x0102CF7D+181357]
+	GetHandleVerifier [0x01017428+92440]
+	GetHandleVerifier [0x010175D0+92864]
+	GetHandleVerifier [0x01001FC0+5296]
+	BaseThreadInitThunk [0x758DFCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x76ED82AE+286]
+	RtlGetAppContainerNamedObjectPath [0x76ED827E+238]
+
+INFO:root:Consulta exitosa NIT: 830027960 — PROTECSA S.A. EN LIQUIDACION, Estado: REGISTRO ACTIVO
+ERROR:root:Error con NIT 860002964 (Intento 1): Message: 
+Stacktrace:
+	GetHandleVerifier [0x0100FBD3+61635]
+	GetHandleVerifier [0x0100FC14+61700]
+	(No symbol) [0x00E305D3]
+	(No symbol) [0x00E7899E]
+	(No symbol) [0x00E78D3B]
+	(No symbol) [0x00EC0E12]
+	(No symbol) [0x00E9D2E4]
+	(No symbol) [0x00EBE61B]
+	(No symbol) [0x00E9D096]
+	(No symbol) [0x00E6C840]
+	(No symbol) [0x00E6D6A4]
+	GetHandleVerifier [0x01257043+2450739]
+	GetHandleVerifier [0x012527C6+2432182]
+	GetHandleVerifier [0x0126D50E+2542078]
+	GetHandleVerifier [0x01026895+155013]
+	GetHandleVerifier [0x0102CF7D+181357]
+	GetHandleVerifier [0x01017428+92440]
+	GetHandleVerifier [0x010175D0+92864]
+	GetHandleVerifier [0x01001FC0+5296]
+	BaseThreadInitThunk [0x758DFCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x76ED82AE+286]
+	RtlGetAppContainerNamedObjectPath [0x76ED827E+238]
+
+INFO:root:Consulta exitosa NIT: 860002964 — BANCO DE BOGOTA, Estado: REGISTRO ACTIVO
+INFO:werkzeug:127.0.0.1 - - [05/May/2025 09:06:16] "POST /procesar HTTP/1.1" 200 -
