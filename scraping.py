@@ -16,7 +16,6 @@ def consultar_nits(input_path, output_path):
     driver = uc.Chrome(options=options)
     driver.get("https://muisca.dian.gov.co/WebRutMuisca/DefConsultaEstadoRUT.faces")
 
-    # Tiempo de espera para que el usuario resuelva el CAPTCHA manualmente (10 minutos en este ejemplo)
     print("🚨 Por favor, resuelve el CAPTCHA manualmente. El programa continuará después de 15 segundos")
     time.sleep(15)  # Espera de 15s. Cambia esto si es necesario.
 
@@ -34,7 +33,7 @@ def consultar_nits(input_path, output_path):
         print(f'----Consultando NIT: {nit}')
 
         try:
-            time.sleep(10)
+            time.sleep(8)
 
             input_nit = driver.find_element(By.ID, 'vistaConsultaEstadoRUT:formConsultaEstadoRUT:numNit')
             input_nit.clear()
@@ -54,15 +53,15 @@ def consultar_nits(input_path, output_path):
             segundo_apellido = safe_get_text(By.ID, 'vistaConsultaEstadoRUT:formConsultaEstadoRUT:segundoApellido')
 
             resultados.append({
-                'NIT': nit,
-                'Razón Social': razon_social,
-                'DV': dv,
-                'Primer Nombre': primer_nombre,
-                'Segundo Nombre': segundo_nombre,
-                'Primer Apellido': primer_apellido,
-                'Segundo Apellido': segundo_apellido,
-                'Fecha Busqueda': fecha_actual,
-                'Estado RUT': estado
+                'NIT': nit or 'No aplica',
+                'Razón Social': razon_social or 'No aplica',
+                'DV': dv or 'No aplica',
+                'Primer Nombre': primer_nombre or 'No aplica',
+                'Segundo Nombre': segundo_nombre or 'No aplica',
+                'Primer Apellido': primer_apellido or 'No aplica',
+                'Segundo Apellido': segundo_apellido or 'No aplica',
+                'Fecha Busqueda': fecha_actual or 'No aplica',
+                'Estado RUT': estado or 'Error de consulta'
             })
             print(f'✅ Resultado obtenido para {nit}')
 
@@ -84,7 +83,7 @@ def consultar_nits(input_path, output_path):
             fallidos.append(error_data)
 
         driver.get("https://muisca.dian.gov.co/WebRutMuisca/DefConsultaEstadoRUT.faces")
-        time.sleep(10)
+        time.sleep(2)
 
     driver.quit()
 
