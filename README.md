@@ -16,7 +16,7 @@ Este proyecto permite consultar información del **RUT** en la página oficial d
 
 1. **Clona este repositorio** (o copia los archivos en tu máquina):
 
-git clone https://github.com/tu-usuario/consulta-nits.git
+git clone https://github.com/JhoannS/Busqueda_Dian.git
 cd consulta-nits
 
 2. **Crea un entorno virtual** 
