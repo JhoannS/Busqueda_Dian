@@ -11,28 +11,24 @@ os.makedirs(RESULT_FOLDER, exist_ok=True)
 
 @app.route('/')
 def index():
-    print("Ruta / cargada correctamente")
+    print("✔️ Cargando vista index.html")
     return render_template('index.html')
 
 @app.route('/procesar', methods=['POST'])
 def procesar():
-    if request.method == 'POST':
-       
-        file = request.files['input_file']
-        output_file_name = request.form['output_file']
+    file = request.files['input_file']
+    output_file_name = f'resultado_{datetime.now().strftime("%Y%m%d_%H%M%S")}.xlsx'
 
-        if file and file.filename.endswith('.xlsx'):
-           
-            input_path = os.path.join(UPLOAD_FOLDER, file.filename)
-            file.save(input_path)
+    if file and file.filename.endswith('.xlsx'):
+        input_path = os.path.join(UPLOAD_FOLDER, file.filename)
+        file.save(input_path)
 
-            path_output = os.path.join(RESULT_FOLDER, output_file_name)
-            resultado = consultar_nits(input_path, path_output)
-        
-            return send_file(resultado, as_attachment=True)
+        output_path = os.path.join(RESULT_FOLDER, output_file_name)
+        result_file = consultar_nits(input_path, output_path)
 
-        else:
-            return "Archivo no válido. Solo se permite .xlsx"
+        return send_file(result_file, as_attachment=True)
+
+    return "Archivo no válido. Solo se permite .xlsx"
 
 if __name__ == "__main__":
-    app.run( port=int(os.environ.get('PORT', 5000)))
+    app.run(debug=True, port=3000)
