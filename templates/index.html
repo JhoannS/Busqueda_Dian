@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Consulta DIAN</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+  <div class="container mt-5">
+    <h2 class="mb-4">Consulta Estado RUT - DIAN</h2>
+    <form method="POST" enctype="multipart/form-data" action="/procesar">
+        <label for="input_file">Archivo de Entrada (.xlsx):</label>
+        <input type="file" name="input_file" id="input_file" required>
+      
+        <label for="output_file">Nombre del Archivo de Salida:</label>
+        <input type="text" name="output_file" id="output_file" value="resultados_dian.xlsx" required>
+      
+        <button type="submit">Enviar</button>
+    </form>
+  </div>
+</body>
+</html>
