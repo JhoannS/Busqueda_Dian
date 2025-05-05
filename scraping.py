@@ -1,4 +1,3 @@
-
 import undetected_chromedriver as uc
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoSuchElementException
@@ -17,7 +16,9 @@ def consultar_nits(input_path, output_path):
     driver = uc.Chrome(options=options)
     driver.get("https://muisca.dian.gov.co/WebRutMuisca/DefConsultaEstadoRUT.faces")
 
-    input("✔️ Resuelve el CAPTCHA manualmente y presiona Enter aquí para continuar...")
+    # Tiempo de espera para que el usuario resuelva el CAPTCHA manualmente (10 minutos en este ejemplo)
+    print("🚨 Por favor, resuelve el CAPTCHA manualmente. El programa continuará después de 15 segundos")
+    time.sleep(15)  # Espera de 15s. Cambia esto si es necesario.
 
     def safe_get_text(by, value):
         try:
@@ -33,7 +34,7 @@ def consultar_nits(input_path, output_path):
         print(f'----Consultando NIT: {nit}')
 
         try:
-            time.sleep(6)
+            time.sleep(10)
 
             input_nit = driver.find_element(By.ID, 'vistaConsultaEstadoRUT:formConsultaEstadoRUT:numNit')
             input_nit.clear()
@@ -41,7 +42,7 @@ def consultar_nits(input_path, output_path):
             input_nit.send_keys(nit)
 
             driver.find_element(By.ID, 'vistaConsultaEstadoRUT:formConsultaEstadoRUT:btnBuscar').click()
-            time.sleep(5)
+            time.sleep(10)
 
             razon_social = safe_get_text(By.ID, 'vistaConsultaEstadoRUT:formConsultaEstadoRUT:razonSocial')
             dv = safe_get_text(By.ID, 'vistaConsultaEstadoRUT:formConsultaEstadoRUT:dv')
@@ -83,7 +84,7 @@ def consultar_nits(input_path, output_path):
             fallidos.append(error_data)
 
         driver.get("https://muisca.dian.gov.co/WebRutMuisca/DefConsultaEstadoRUT.faces")
-        time.sleep(5)
+        time.sleep(10)
 
     driver.quit()
 
