@@ -11,19 +11,19 @@ import logging
 import os
 
 def esperar_capcha(driver):
-    print("🧠 Esperando a que se muestre el campo de NIT (posiblemente después del CAPTCHA)...")
+    print("Esperando a que se muestre el campo de NIT (posiblemente después del CAPTCHA)...")
     WebDriverWait(driver, timeout=1000).until(
         EC.presence_of_element_located((By.ID, 'vistaConsultaEstadoRUT:formConsultaEstadoRUT:numNit'))
     )
-    print("✔️ Página lista para ingresar NIT.")
+    print("Página lista para ingresar NIT.")
 
 def esperar_validacion_captcha(driver):
-    print("🧠 Verificando si el CAPTCHA ha sido validado correctamente...")
+    print("Verificando si el CAPTCHA ha sido validado correctamente...")
     while True:
         try:
             mensaje = driver.find_element(By.CLASS_NAME, 'ui-messages-error-summary').text
             if "captcha" in mensaje.lower():
-                print("⚠️ CAPTCHA no resuelto aún. Esperando 5 segundos...")
+                print("CAPTCHA no resuelto aún. Esperando 5 segundos...")
                 time.sleep(5)
             else:
                 break
@@ -51,18 +51,18 @@ def consultar_nits(file_path_input='consulta_nits.xlsx', file_path_output='resul
 
         for intento in range(3):
             try:
-                print(f'🔄 Recargando página para consultar NIT: {nit} (Intento {intento+1})')
+                print(f'Recargando página para consultar NIT: {nit} (Intento {intento+1})')
                 driver.get("https://muisca.dian.gov.co/WebRutMuisca/DefConsultaEstadoRUT.faces")
                 esperar_capcha(driver)
 
-                print("⌛ Esperando 6 segundos para simular comportamiento humano...")
+                print("Esperando 6 segundos para simular comportamiento humano...")
                 time.sleep(6)
 
                 input_nit = driver.find_element(By.ID, 'vistaConsultaEstadoRUT:formConsultaEstadoRUT:numNit')
                 input_nit.clear()
                 input_nit.send_keys(nit)
 
-                print("🧠 Por favor, resuelve el CAPTCHA si aún no lo has hecho...")
+                print("Por favor, resuelve el CAPTCHA si aún no lo has hecho...")
                 WebDriverWait(driver, timeout=1000).until(
                     EC.presence_of_element_located((By.ID, 'vistaConsultaEstadoRUT:formConsultaEstadoRUT:btnBuscar'))
                 )
@@ -97,13 +97,13 @@ def consultar_nits(file_path_input='consulta_nits.xlsx', file_path_output='resul
 
                 resultados.append(resultado)
                 logging.info(f"Consulta exitosa NIT: {nit} — {razon_social}, Estado: {estado}")
-                print(f"✅ Datos capturados para NIT: {nit} — Razón Social: {razon_social}, Estado: {estado}")
+                print(f"Datos capturados para NIT: {nit} — Razón Social: {razon_social}, Estado: {estado}")
 
                 break  # salir del ciclo de reintentos si fue exitoso
 
             except Exception as e:
                 logging.error(f'Error con NIT {nit} (Intento {intento+1}): {e}')
-                print(f'❌ Error con NIT {nit} (Intento {intento+1}): {e}')
+                print(f'Error con NIT {nit} (Intento {intento+1}): {e}')
                 time.sleep(3)
 
                 if intento == 2:
@@ -124,5 +124,5 @@ def consultar_nits(file_path_input='consulta_nits.xlsx', file_path_output='resul
 
     driver.quit()
     pd.DataFrame(resultados).to_excel(file_path_output, index=False)
-    print(f"📁 Archivo guardado correctamente en: {file_path_output}")
+    print(f"Archivo guardado correctamente en: {file_path_output}")
     return file_path_output

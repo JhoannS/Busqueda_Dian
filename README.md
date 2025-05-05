@@ -1,10 +1,10 @@
-# Consulta de NITs DIAN con Selenium 🧾🇨🇴
+# Consulta de NITs DIAN JoyPegasus
 
 Este proyecto permite consultar información del **RUT** en la página oficial de la DIAN de Colombia, utilizando **Selenium** y **undetected-chromedriver** para evitar bloqueos por parte del sitio.
 
 ---
 
-## 🚀 Requisitos
+## Requisitos
 
 - Python 3.8 o superior
 - Google Chrome instalado
@@ -12,7 +12,7 @@ Este proyecto permite consultar información del **RUT** en la página oficial d
 
 ---
 
-## 📦 Instalación
+## Instalación
 
 1. **Clona este repositorio** (o copia los archivos en tu máquina):
 
