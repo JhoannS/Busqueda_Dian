@@ -10,14 +10,6 @@ from tqdm import tqdm
 import logging
 import os
 
-logging.basicConfig(filename='log_consulta.log', level=logging.INFO)
-
-def safe_get_text(by, value, driver):
-    try:
-        return driver.find_element(by, value).text
-    except NoSuchElementException:
-        return ''
-
 def esperar_capcha(driver):
     print("🧠 Esperando a que se muestre el campo de NIT (posiblemente después del CAPTCHA)...")
     WebDriverWait(driver, timeout=1000).until(

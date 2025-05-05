@@ -1,9 +1,0 @@
-services:
-  - type: web
-    name: consulta-nits
-    env: python
-    buildCommand: ""
-    startCommand: python app.py
-    envVars:
-      - key: PORT
-        value: 10000

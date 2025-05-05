@@ -11,6 +11,7 @@ os.makedirs(RESULT_FOLDER, exist_ok=True)
 
 @app.route('/')
 def index():
+    print("📥 Ruta / cargada correctamente")
     return render_template('index.html')
 
 @app.route('/procesar', methods=['POST'])
@@ -36,4 +37,4 @@ def procesar():
             return "Archivo no válido. Solo se permite .xlsx"
 
 if __name__ == "__main__":
-    app.run(debug=True, host='0.0.0.0', port=int(os.environ.get('PORT', 5000)))
+    app.run( port=int(os.environ.get('PORT', 5000)))
