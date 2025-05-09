@@ -16,19 +16,17 @@ Este proyecto permite consultar información del **RUT** en la página oficial d
 
 1. **Clona este repositorio** (o copia los archivos en tu máquina):
 
-git clone https://github.com/JhoannS/Busqueda_Dian.git
-cd consulta-nits
+- git clone https://github.com/JhoannS/Busqueda_Dian.git e ingresa con **cd consulta_dian_web**
 
 2. **Crea un entorno virtual** 
 python -m venv venv
 
-3. **Activa el entorno virtual**
-#En GitBash 
-source venv/bin/activate 
+3. **Activa el entorno virtual:**
 
-# En PowerSheel: 
-venv\Scripts\activate
+- En GitBash: source venv/bin/activate 
 
-3. ***Instala dependencias**
-pip install -r requirements.txt (opcional)
-pip install pandas selenium openpyxl undetected-chromedriver flask setuptools (obligatorio)
+- En PowerSheel: venv\Scripts\activate
+
+3. **Instala dependencias**
+- pip install -r requirements.txt (opcional)
+- pip install pandas selenium openpyxl undetected-chromedriver flask setuptools (obligatorio)
