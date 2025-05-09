@@ -17,7 +17,7 @@ def consultar_nits(input_path, output_path):
     driver.get("https://muisca.dian.gov.co/WebRutMuisca/DefConsultaEstadoRUT.faces")
 
     print("🚨 Por favor, resuelve el CAPTCHA manualmente. El programa continuará después de 15 segundos")
-    time.sleep(15)  # Espera de 15s. Cambia esto si es necesario.
+    time.sleep(8)  # Espera de 15s. Cambia esto si es necesario.
 
     def safe_get_text(by, value):
         try:
@@ -33,7 +33,7 @@ def consultar_nits(input_path, output_path):
         print(f'----Consultando NIT: {nit}')
 
         try:
-            time.sleep(8)
+            time.sleep(5)
 
             input_nit = driver.find_element(By.ID, 'vistaConsultaEstadoRUT:formConsultaEstadoRUT:numNit')
             input_nit.clear()
@@ -41,7 +41,7 @@ def consultar_nits(input_path, output_path):
             input_nit.send_keys(nit)
 
             driver.find_element(By.ID, 'vistaConsultaEstadoRUT:formConsultaEstadoRUT:btnBuscar').click()
-            time.sleep(10)
+            time.sleep(5)
 
             razon_social = safe_get_text(By.ID, 'vistaConsultaEstadoRUT:formConsultaEstadoRUT:razonSocial')
             dv = safe_get_text(By.ID, 'vistaConsultaEstadoRUT:formConsultaEstadoRUT:dv')
