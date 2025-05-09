@@ -4,126 +4,18 @@
 <head>
   <meta charset="UTF-8">
   <title>Consulta DIAN</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<style>
- 
-  /* From Uiverse.io by Web-Potato */
-  button {
-    padding: 0.1em 0.25em;
-    width: 13em;
-    height: 4.2em;
-    background-color: #4a90e2;
-    border: 0.08em solid #fff;
-    border-radius: 0.3em;
-    font-size: 12px;
-    cursor: pointer;
-  }
 
-  button span {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    bottom: 0.4em;
-    width: 8.25em;
-    height: 2.5em;
-    background-color: #4a90e2;
-    border-radius: 0.2em;
-    font-size: 1.5em;
-    color: #fff;
-    border: 0.08em solid #fff;
-    box-shadow: 0 0.4em 0.1em 0.019em #fff;
-  }
+ <div id="loader" class="fixed inset-0 bg-gray-900 bg-opacity-80 flex justify-center items-center z-50">
+<div class="flex-col gap-4 w-full flex items-center justify-center" >
+  <div class="loader w-28 h-28 border-8 text-blue-400 text-4xl animate-spin border-gray-300 flex items-center justify-center border-t-blue-400 rounded-full">
+    <img src="{{ url_for('static', filename='img/img.png') }}" alt="Logo"  class="w-[50%] rounded-full animate-ping">
+  </div>
+</div>
+ </div>
 
-  button span:hover {
-    transition: all 0.5s;
-    transform: translate(0, 0.4em);
-    box-shadow: 0 0 0 0 #fff;
-  }
-
-  button span:not(hover) {
-    transition: all 1s;
-  }
-
-  .custum-file-upload {
-    height: 50px;
-    width: auto;
-    display: flex;
-    cursor: pointer;
-    align-items: center;
-    justify-content: center;
-    border: 1.5px dashed #e8e8e8;
-    padding: 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0px 48px 35px -48px #e8e8e8;
-  }
-
-  /* From Uiverse.io by neerajbaniwal */ 
-.btn-shine {
-  transform: translate(-50%, -50%);
-  padding: 12px 48px;
-  color: #fff;
-  background: linear-gradient(to right, #9f9f9f 0, #fff 10%, #868686 20%);
-  background-position: 0;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: shine 3s infinite linear;
-  animation-fill-mode: forwards;
-  -webkit-text-size-adjust: none;
-  font-weight: 600;
-  font-size: 16px;
-  text-decoration: none;
-  white-space: nowrap;
-  font-family: "Poppins", sans-serif;
-}
-@-moz-keyframes shine {
-  0% {
-    background-position: 0;
-  }
-  60% {
-    background-position: 180px;
-  }
-  100% {
-    background-position: 180px;
-  }
-}
-@-webkit-keyframes shine {
-  0% {
-    background-position: 0;
-  }
-  60% {
-    background-position: 180px;
-  }
-  100% {
-    background-position: 180px;
-  }
-}
-@-o-keyframes shine {
-  0% {
-    background-position: 0;
-  }
-  60% {
-    background-position: 180px;
-  }
-  100% {
-    background-position: 180px;
-  }
-}
-@keyframes shine {
-  0% {
-    background-position: 0;
-  }
-  60% {
-    background-position: 180px;
-  }
-  100% {
-    background-position: 180px;
-  }
-}
-
-
-</style>
 
 <body class="min-h-[100vh] bg-gray-900 text-white flex justify-center items-center">
   <div class="text-center">
@@ -156,6 +48,16 @@
 
 
   </div>
+
+  <script>
+    window.addEventListener('load', () => {
+      const loader = document.getElementById('loader');
+      setTimeout(() => {
+        loader.classList.add('hidden');
+      }, 1500);
+    });
+  </script>
+  
 </body>
 
 </html>
