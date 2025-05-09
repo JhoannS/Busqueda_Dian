@@ -20,10 +20,15 @@ git clone https://github.com/JhoannS/Busqueda_Dian.git
 cd consulta-nits
 
 2. **Crea un entorno virtual** 
-
 python -m venv venv
-#En GitBash source venv/bin/activate -  # En PowerSheel: venv\Scripts\activate
+
+3. **Activa el entorno virtual**
+#En GitBash 
+source venv/bin/activate 
+
+# En PowerSheel: 
+venv\Scripts\activate
 
 3. ***Instala dependencias**
-
-pip install -r requirements.txt
+pip install -r requirements.txt (opcional)
+pip install pandas selenium openpyxl undetected-chromedriver flask setuptools (obligatorio)
