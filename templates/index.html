@@ -59,13 +59,80 @@
     box-shadow: 0px 48px 35px -48px #e8e8e8;
   }
 
+  /* From Uiverse.io by neerajbaniwal */ 
+.btn-shine {
+  transform: translate(-50%, -50%);
+  padding: 12px 48px;
+  color: #fff;
+  background: linear-gradient(to right, #9f9f9f 0, #fff 10%, #868686 20%);
+  background-position: 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s infinite linear;
+  animation-fill-mode: forwards;
+  -webkit-text-size-adjust: none;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  white-space: nowrap;
+  font-family: "Poppins", sans-serif;
+}
+@-moz-keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 180px;
+  }
+  100% {
+    background-position: 180px;
+  }
+}
+@-webkit-keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 180px;
+  }
+  100% {
+    background-position: 180px;
+  }
+}
+@-o-keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 180px;
+  }
+  100% {
+    background-position: 180px;
+  }
+}
+@keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 180px;
+  }
+  100% {
+    background-position: 180px;
+  }
+}
+
 
 </style>
 
 <body class="min-h-[100vh] bg-gray-900 text-white flex justify-center items-center">
   <div class="text-center">
     <h2 class="mb-4 text-blue-400 text-3xl font-bold">Consultas Estado RUT - DIAN</h2>
-    <p>Sube el archivo Excel a procesar</p>
+    <p>Sube el archivo Excel a procesar, o descarga la plantilla y empecemos.</p>
+
+
+    <a href="{{ url_for('static', filename='Layout/plantilla_nits.xlsx') }}" download="PlantillaExcel.xlsx"  class="btn-shine">Descargar Archivo</a>
+
 
     <form method="POST" class="flex flex-col gap-3" enctype="multipart/form-data" action="/procesar">
 
@@ -81,9 +148,13 @@
         <button>
           <span> Procesar </span>
         </button>
-      </div>
 
+        
+      </div>
+      
     </form>
+
+
   </div>
 </body>
 
